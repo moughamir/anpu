@@ -1,0 +1,16 @@
+{
+  "name": "anubis",
+  "description": "The anpu base theme.",
+  "license": "GPLv2",
+  "homepage": "https://github.com/moughamir/anubis",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/components/",
+    "test",
+    "tests"
+  ]
+}

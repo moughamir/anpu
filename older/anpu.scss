@@ -1,0 +1,45 @@
+body {
+  background: #f2f2f2;
+}
+
+// Preloader style
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    text-align: center;
+    path,
+    rect {
+      fill: #a5a4a4;
+    }
+  }
+}
+
+
+.anpu{
+  &-logo{
+    height: 94px;
+    &-small{
+      height: 54px;
+    }
+  }
+}
+
+

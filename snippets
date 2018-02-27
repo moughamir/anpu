@@ -1,0 +1,19 @@
+  axios.get(url)
+      .then(response => {
+        this.setState({
+          data: response.data,
+          loading: false
+        });
+      })
+      .catch(error => {
+        console.log(error);
+      });
+      
+     _.find(app.$data.user, function(o) { return o.metadata.connections.likes.total >= 10; });
+     
+     _.filter(items, function(o) { return o.type === 'actor'; });
+     
+     _.filter(app.$data.user, function(o) { return o.metadata.connections.likes.total >= 10; } );
+     
+     item in filteredItems
+     user in filtredVideos

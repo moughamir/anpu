@@ -1,0 +1,85 @@
+<article class="feature">
+    <span class="image"><img class="tutorial-image" src="images/article-featured-01.png" alt="" /></span>
+    <div class="content">
+        <h2>Modeling & rendering realistic trees with speed tree & c4D</h2>
+        <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+        <ul class="actions">
+            <li>
+                <a href="#" class="button dark simple">Watch</a>
+            </li>
+        </ul>
+    </div>
+</article>
+
+<script type="text/javascript">
+    $('.feature:nth-child(2n)').addClass('right');
+</script>
+<style type="text/scss">
+    .tutorial{ &-image{ width:576px; height:358px; } }
+    	.feature {
+		@include vendor('display', 'flex');
+		@include vendor('align-items', 'center');
+		//margin-bottom: (_size(element-margin) * 3);
+		margin-bottom: 0.6em;
+
+		&:last-child {
+			margin-bottom: _size(element-margin);
+		}
+
+		&.left {
+			@include vendor('flex-direction', 'row');
+		}
+
+		&.right {
+			@include vendor('flex-direction', 'row-reverse');
+		}
+
+		.image {
+			width: 48%;
+
+			img {
+				max-width: 100%;
+			}
+		}
+
+		.content {
+			@include padding(_size(element-margin), 3em);
+			width: 52%;
+		}
+
+		@include breakpoint(large) {
+			margin-bottom: (_size(element-margin) * 2);
+
+			.content {
+				@include padding((_size(element-margin) * 0.5), 2em);
+			}
+		}
+
+		@include breakpoint(medium) {
+			&.left, &.right {
+				@include vendor('flex-direction', 'column');
+			}
+
+			.image {
+				width: 100%;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			.content {
+				@include padding(_size(element-margin), 2em);
+				width: 100%;
+			}
+		}
+
+		@include breakpoint(small) {
+			margin-bottom: _size(element-margin);
+
+			.content {
+				@include padding(_size(element-margin), (_size(element-margin) * 0.5));
+			}
+		}
+	}
+</style>
